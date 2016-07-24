@@ -1,0 +1,8 @@
+bin
+target
+.metadata
+.settings
+.classpath
+.project
+log4j*.properties
+log4j*.xml
