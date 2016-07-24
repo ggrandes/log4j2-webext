@@ -14,7 +14,7 @@ The WebextLookup, like [WebLookup](https://logging.apache.org/log4j/2.0/manual/l
 
 | Key                 | Description |
 | :------------------ | :---------- |
-| contextBaseFileName | The context base file name of the web application like [tomcat-context](https://tomcat.apache.org/tomcat-7.0-doc/config/context.html) |
+| contextBaseFileName | The context base file name of the web application like [tomcat-context](https://tomcat.apache.org/tomcat-7.0-doc/config/context.html#Naming) |
 
 #### Usage Examples
 
@@ -63,4 +63,4 @@ Add the dependency to your pom.xml:
     </dependency>
 
 ---
-Inspired in [tomcat-context](https://tomcat.apache.org/tomcat-7.0-doc/config/context.html) and [log4j2](https://logging.apache.org/log4j/2.0/manual/lookups.html#WebLookup), this code is Java-minimalistic version.
+Inspired in [tomcat-context](https://tomcat.apache.org/tomcat-7.0-doc/config/context.html#Naming) and [log4j2](https://logging.apache.org/log4j/2.0/manual/lookups.html#WebLookup), this code is Java-minimalistic version.
