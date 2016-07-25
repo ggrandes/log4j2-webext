@@ -81,8 +81,8 @@
 						</manifestEntries>
 					</archive>
 					<excludes>
-						<exclude>**/pom.properties</exclude>
-						<exclude>**/log4j.properties</exclude>
+						<exclude>**/log4j*.properties</exclude>
+						<exclude>**/log4j*.xml</exclude>
 						<exclude>**/sandbox/*</exclude>
 					</excludes>
 				</configuration>
