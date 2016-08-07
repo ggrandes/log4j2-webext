@@ -10,7 +10,7 @@ Custom "Web" Lookup (webext) for Log4j2. Open Source Java project under Apache L
 
 ### Webext Lookup
 
-The WebextLookup, like [WebLookup](https://logging.apache.org/log4j/2.0/manual/lookups.html#WebLookup) allows applications to retrieve variables that are associated with the ServletContext. The following table lists various keys that can be retrieved: 
+The WebextLookup, like [WebLookup](https://logging.apache.org/log4j/2.0/manual/lookups.html#WebLookup) allows applications to retrieve variables that are associated with the ServletContext. The following table lists various keys that can be retrieved using the `webext:` prefix:
 
 | Key                 | Description |
 | :------------------ | :---------- |
