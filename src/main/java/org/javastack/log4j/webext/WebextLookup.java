@@ -21,10 +21,11 @@ import javax.servlet.ServletContext;
 import org.apache.logging.log4j.core.LogEvent;
 import org.apache.logging.log4j.core.config.plugins.Plugin;
 import org.apache.logging.log4j.core.lookup.AbstractLookup;
+import org.apache.logging.log4j.core.lookup.StrLookup;
 import org.apache.logging.log4j.util.Strings;
 import org.apache.logging.log4j.web.WebLoggerContextUtils;
 
-@Plugin(name = "webext", category = "Lookup")
+@Plugin(name = "webext", category = StrLookup.CATEGORY)
 public class WebextLookup extends AbstractLookup {
 
 	@Override
