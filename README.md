@@ -2,7 +2,7 @@
 
 Custom "Web" Lookup (webext) for Log4j2. Open Source Java project under Apache License v2.0
 
-### Current Stable Version is [1.0.1](https://search.maven.org/#search|ga|1|g%3Aorg.javastack%20a%3Alog4j2-webext)
+### Current Stable Version is [2.0.0](https://search.maven.org/#search|ga|1|g%3Aorg.javastack%20a%3Alog4j2-webext-jakarta)
 
 ---
 
@@ -14,7 +14,7 @@ The WebextLookup, like [WebLookup](https://logging.apache.org/log4j/2.0/manual/l
 
 | Key                 | Description |
 | :------------------ | :---------- |
-| contextBaseFileName | The context base file name of the web application like [tomcat-context](https://tomcat.apache.org/tomcat-7.0-doc/config/context.html#Naming) |
+| contextBaseFileName | The context base file name of the web application like [tomcat-context](https://tomcat.apache.org/tomcat-10.1-doc/config/context.html#Naming) |
 
 #### Usage Examples
 
@@ -56,6 +56,16 @@ rootLogger.appenderRef.tomcat.ref = tomcat
 
 Add the dependency to your pom.xml:
 
+###### jakarta.servlet (tomcat 10+; log4j2 2.15.0+)
+
+    <dependency>
+        <groupId>org.javastack</groupId>
+        <artifactId>log4j2-webext-jakarta</artifactId>
+        <version>2.0.0</version>
+    </dependency>
+
+###### javax.servlet (tomcat 8.5, 9; log4j2 2.x)
+
     <dependency>
         <groupId>org.javastack</groupId>
         <artifactId>log4j2-webext</artifactId>
@@ -63,4 +73,4 @@ Add the dependency to your pom.xml:
     </dependency>
 
 ---
-Inspired in [tomcat-context](https://tomcat.apache.org/tomcat-7.0-doc/config/context.html#Naming) and [log4j2](https://logging.apache.org/log4j/2.0/manual/lookups.html#WebLookup), this code is Java-minimalistic version.
+Inspired in [tomcat-context](https://tomcat.apache.org/tomcat-10.1-doc/config/context.html#Naming) and [log4j2](https://logging.apache.org/log4j/2.0/manual/lookups.html#WebLookup), this code is Java-minimalistic version.
